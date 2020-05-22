@@ -8,6 +8,10 @@ public class ShopsController : MonoBehaviour
 
     void Start()
     {
-        PotentialShops = GetComponentsInChildren<Transform>();
+      Transform[] PotentialShopsBis = GetComponentsInChildren<Transform>();
+      PotentialShops = new Transform[PotentialShopsBis.Length - 1];
+      for(int i = 1; i < PotentialShopsBis.Length; i++){
+          PotentialShops[i - 1] = PotentialShopsBis[i];
+      }
     }
 }

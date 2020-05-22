@@ -8,7 +8,11 @@ public class HousesController : MonoBehaviour
 
     void Start()
     {
-        PotentialHouses = GetComponentsInChildren<Transform>();
+      Transform[] PotentialHousesBis = GetComponentsInChildren<Transform>();
+      PotentialHouses = new Transform[PotentialHousesBis.Length - 1];
+      for(int i = 1; i < PotentialHousesBis.Length; i++){
+          PotentialHouses[i - 1] = PotentialHousesBis[i];
+      }
     }
 
 }

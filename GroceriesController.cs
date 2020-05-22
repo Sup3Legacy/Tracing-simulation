@@ -8,6 +8,10 @@ public class GroceriesController : MonoBehaviour
 
     void Start()
     {
-        PotentialGroceries = GetComponentsInChildren<Transform>();
+        Transform[] PotentialGroceriesBis = GetComponentsInChildren<Transform>();
+        PotentialGroceries = new Transform[PotentialGroceriesBis.Length - 1];
+        for(int i = 1; i < PotentialGroceriesBis.Length; i++){
+            PotentialGroceries[i - 1] = PotentialGroceriesBis[i];
+        }
     }
 }

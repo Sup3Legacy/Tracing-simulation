@@ -8,6 +8,10 @@ public class WorkplacesController : MonoBehaviour
 
     void Awake()
     {
-        PotentialWorkplaces = GetComponentsInChildren<Transform>();
+      Transform[] PotentialWorkplacesBis = GetComponentsInChildren<Transform>();
+      PotentialWorkplaces = new Transform[PotentialWorkplacesBis.Length - 1];
+      for(int i = 1; i < PotentialWorkplacesBis.Length; i++){
+          PotentialWorkplaces[i - 1] = PotentialWorkplacesBis[i];
+      }
     }
 }
