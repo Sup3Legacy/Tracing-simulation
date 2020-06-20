@@ -27,7 +27,7 @@ Tout au long de la simulation, il est possible d'ajouter des **patients-zéro**,
 Patient-zéro : 
 ![Patient-zéro](/images/Individus_exposes.png)
 
-J'ai simulé les contacts et risques contagieux par une sphère d'un rayon arbitraire (faisant partie des hyperparamètres de la simulation), centrée autour de chaque individu contagieux et dans laquelle tout individu sain risque de passer dans l'état exposé.
+J'ai simulé les contacts et risques contagieux par une **sphère d'un rayon arbitraire** (ce rayon fait partie des **hyperparamètres** de la simulation), centrée autour de chaque individu contagieux et dans laquelle tout individu sain risque de passer dans l'état exposé.
 
 On voit le fonctionnement ici, où un unique individu (ici en rouge) a contaminé plusieurs de ses  co-travailleurs sur son lieu de travail :
 ![Contamination](/images/Individus_infectes.png)
@@ -35,6 +35,6 @@ On voit le fonctionnement ici, où un unique individu (ici en rouge) a contamin�
 ## Pistes pour le futur
 
 Il y a plusieurs points sur lesquels j'aimerais améliorer cette simulation :
-* Améliorer le cycle jour/nuit : Pour l'instant, chaque individu suit son propre rythme jour/nuit, ce qui est peu représentatif de la réalité
-* Ajouter des actions : Les individus ne font qu'aller travailler, faire les courses et magasins et rentrer chez eux. Il serait intéressant de leur donner un âge et de faire dépendre de cet âge les occupations!
-* Ajouter les contre-mesures : je n'ai pas encore implémenté les différentes contre-mesures possibles : confinement partiel ou total, contact-tracing
+* Améliorer le **cycle jour/nuit** : Pour l'instant, chaque individu suit son propre rythme jour/nuit, ce qui est peu représentatif de la réalité
+* Ajouter des **actions** : Les individus ne font qu'aller travailler, faire les courses et magasins et rentrer chez eux. Il serait intéressant de leur donner un âge et de faire dépendre de cet âge les occupations!
+* Ajouter les **contre-mesures** : je n'ai pas encore implémenté les différentes contre-mesures possibles : confinement partiel ou total, contact-tracing (le but initial du projet!)
