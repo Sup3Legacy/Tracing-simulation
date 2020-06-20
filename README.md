@@ -2,11 +2,11 @@
 Simulation dans le moteur Unity du fonctionnement du Contact-Tracing (https://github.com/ROBERT-proximity-tracing/documents)
 
 ## Motivation
-Ayant entendu parler de la possibilité que soit mise en place une stratégie de contact-tracing, je me suis demandé comment cela marche en pratique et quels bénéfices nous pouvons en tirer
+Ayant entendu parler de la possibilité que soit mise en place une stratégie de contact-tracing, je me suis demandé comment cela marche en pratique et quels bénéfices nous pouvons en tirer.
 
 ## Contexte de la simulation
 
-Pour mener ce projet, j'ai mis en place une simulation, dans le moteur Unity, d'une ville et de ses habitants. 
+Pour cela, j'ai mis en place une simulation, dans le moteur Unity, d'une ville et de ses habitants. 
 
 ![Aperçu de la ville](/images/Ville.png)
 
